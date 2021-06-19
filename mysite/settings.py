@@ -138,6 +138,10 @@ ACCOUNT_USER_MODEL_USERNAME_FIELD = None
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_USERNAME_REQUIRED = False
 
+import os
 # 追加
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# テストが完了したら、環境変数にする
+STRIPE_SECRET_KEY = 'sk_test_51J3z7jEgf0AEWo9gE0WvwZCmuaComy54RiTt9XllleOQkfaxsLtD6xwEkayGxKiruR3Rt3RGXfiJrbyKsckgIh4j00ZdkOJUUy'
